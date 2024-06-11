@@ -1,0 +1,31 @@
+/* src/components/WeatherDetails.css */
+.weather-details {
+    text-align: center;
+  }
+  
+  .weather-details h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  .weather-details p {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .temperature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .temperature h1 {
+    font-size: 72px;
+  }
+  
+  .temperature img {
+    width: 100px;
+    height: 100px;
+  }
+  

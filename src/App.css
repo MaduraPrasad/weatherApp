@@ -1,38 +1,152 @@
-.App {
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #1e213a;
+  color: #e7e7eb;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #100e1d;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-bar button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #3c47e9;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.menu{
+  width: 50px;
+}
+
+.menu button {
+  background: none;
+  border: none;
+  color: #e7e7eb;
+  padding: 10px 20px;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu button:hover {
+  background-color: #3c47e9;
+  border-radius: 5px;
+}
+
+.main-content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.forecast,
+.air-conditions,
+.weekly-forecast {
+  background-color: #2c2c54;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.weather-details h1,
+.weather-details p {
+  margin: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.temperature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.temperature h1 {
+  font-size: 72px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.temperature img {
+  width: 100px;
+  height: 100px;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-around;
+}
+
+.forecast-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.forecast-item p {
+  margin: 5px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weekly-forecast {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.weekly-forecast-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.weekly-forecast-item p {
+  margin: 0;
+}
+
+.weekly-forecast-item img {
+  width: 40px;
+  height: 40px;
+}
+
+.air-conditions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.air-conditions p {
+  margin: 5px 0;
 }
